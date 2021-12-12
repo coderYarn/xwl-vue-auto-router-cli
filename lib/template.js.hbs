@@ -1,0 +1,25 @@
+import Vue from 'vue'
+import Router from 'vue-router'
+
+Vue.use(Router)
+
+export default new Router({
+  mode: 'history',
+  base: process.env.BASE_URL,
+  routes: [
+    {{#each routes}}
+    {
+      path: '/{{path}}',
+      name: '{{name}}',
+      component: () => import('{{component}}'),
+      children:[
+       {{#each children}},
+          path: '/{{path}}',
+          name: '{{name}}}',
+          component: () => import('{{component}}'),
+      {{/each}}
+    ]
+    },
+    {{/each}}
+  ]
+})

@@ -1,0 +1,28 @@
+{
+  "name": "xwl-vue-auto-router-cli",
+  "version": "0.0.5",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "vueget": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "clear": "^0.1.0",
+    "commander": "^8.3.0",
+    "download-git-repo": "^3.0.2",
+    "execa": "^6.0.0",
+    "figlet": "^1.5.2",
+    "handlebars": "^4.7.7",
+    "open": "^8.4.0",
+    "ora": "^6.0.1",
+    "watch": "^0.13.0"
+  }
+}
